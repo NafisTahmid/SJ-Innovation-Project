@@ -1,0 +1,662 @@
+body {
+    
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  background-color: #19191B;
+}
+
+.navbar {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 4000;
+    font-size: 18px;
+    line-height: 24.55px;
+    text-align: right;
+}
+
+.navbar a:focus {
+    color: #FF5151;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-transform: uppercase;
+}
+
+/* .img-logo {
+    width: 40px;
+    height: 40px;
+    top: 189.63px;
+    left: 805px;
+
+} */
+
+.img-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes the logo circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+/* .navbar #logo-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 39.2px;
+    
+} */
+
+.navbar #logo-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 39.2px;
+    color: #FFFFFF;
+}
+
+.navbar button {
+    width: 141px;
+    height: 40px;
+    top: 199.63px;
+    left: 1856px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.82px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    
+   
+    color: #ffffff; 
+    background: transparent; 
+    border: 1px solid #FFFFFF; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+
+/* .container {
+
+    height: 4374px;
+    top: 97px;
+    left: 1634px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.line {
+    display: flex;
+}
+
+.line h1 {
+  
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 84px;
+    color: #FFFFFF;
+}
+
+.line p {
+  
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.66px;
+    color: #FFFFFF;
+}
+
+.line img {
+    width: 967.05px;
+    height: 939px;
+    top: 213.63px;
+    left: 1051px;
+} */
+
+/* Style for the entire container to center it within the viewport */
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust height as needed */
+}
+
+/* Flexbox settings for the line inside the container */
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Half-width settings to make sure the text and image take equal space */
+.half-width {
+    /* flex: 1; */
+    padding: 20px;
+    /* box-sizing: border-box; */
+}
+
+/* Style adjustments for the header text */
+.line h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 84px;
+    color: #FFFFFF;
+    margin: 0 0 20px 0;
+}
+
+/* Style adjustments for the paragraph text */
+.line p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.66px;
+    color: #FFFFFF;
+    margin: 0 0 20px 0;
+}
+
+/* Style adjustments for the images */
+.line img {
+    width: 967.05px;
+    height: 939px;
+   /* Adjust based on design needs */
+   /* Optional: to round the corners of the image */
+}
+
+#services-button {
+    display: flex;
+    align-items: center;
+    width: 204px;
+    height: 58px;
+    top: 820.63px;
+    left: 808px;
+    border-radius: 4px;
+    background-color: #FF5151;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27.28px;
+    padding-left: 30px;
+}
+
+#services-button img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#service-we-provide h2{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+}
+
+#service-we-provide img {
+    width: 120px;
+    height: 80px;
+}
+
+#service-we-provide .half-width {
+    min-width: 320px;
+    min-height: 350px;
+    border-radius: 25px;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+#service-we-provide .half-width:hover {
+    border: 0.5px solid #FFFFFF;
+    cursor: pointer;
+}
+
+#service-we-provide .half-width h3, p {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#service-we-provide .half-width p {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+#awesome-portfolio h2 {
+    /* font: Rubik */
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 68.73px;
+    color: #FFFFFF;
+}
+
+#awesome-portfolio .navbar {
+  
+    width: 100%;
+    height: 10vh;
+    /* margin: auto; */
+    /* padding-left: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+  
+}
+
+#awesome-portfolio .navbar a {
+    text-align: left;
+    
+}
+
+#awesome-portfolio .navbar ul li {
+    width: 80px;
+    height: 50px;
+    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 5px; */
+}
+
+#awesome-portfolio .navbar ul li:hover {
+    background-color: #FF5151;
+}
+
+#portfolio-image {
+    width: 555px;
+    height: 446px;
+    top: 1982.63px;
+    left: 805px;
+    border-radius: 12px;
+}
+
+#conceptZilla {
+    /* font: Nunito Sans */
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49.1px;
+    letter-spacing: -0.75px;
+    color: #FFFFFF;
+
+}
+
+#awesome-portfolio p {
+    /* Font: Nunito Sans */
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+}
+
+#awesome-portfolio button {
+    margin-top: 5px;
+    width: 167px;
+    height: 49px;
+    top: 2686.63px;
+    left: 805px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #FFFFFF;
+}
+
+#portfolio-image-new {
+    width: 282px;
+    height: 212.34px;
+    top: 1982.63px;
+    left: 1723px;
+    border-radius: 12px;
+}
+
+.line-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0;
+}
+
+.half-width-new {
+    display: flex;
+}
+
+.line-new h4, p {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38.19px;
+    letter-spacing: -0.75px;
+    margin-right: 120px;
+}
+
+.line-new small {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+
+#client h2 {
+    /* font: Rubik */
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71.1px;
+    color: #FFFFFF;
+}
+
+#testimonial-image {
+    width: 519px;
+    height: 364px;
+    top: 3178.63px;
+    left: 672px;
+    border-radius: 12px;
+}
+
+#star-image {
+    width: 29px;
+    height: 29px;
+    top: 3215.63px;
+    left: 1099px;
+}
+
+#great-design-title {
+    /* Typography: Nunito Sans */
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38.19px;
+    letter-spacing: -0.75px;
+    color: #FFFFFF;
+}
+
+#client p {
+    /* font: nunito sans */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+}
+
+#line-one {
+    /* width: 587px; */
+    /* height: 396px; */
+    top: 3150.63px;
+    left: 806px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    background-color: #443f3f;
+    padding: 20px;
+}
+
+#profile-one {
+    width: 53px;
+    height: 53px;
+    top: 3439.63px;
+    left: 1102px;
+}
+
+#client h5 {
+    /* font: nunito sans */
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24.55px;
+    letter-spacing: -0.75px;
+    color: #FFFFFF;
+}
+
+.info-text {
+    /* font: Nunito sans */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    /* padding: 10px; */
+
+}
+
+.line-two {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+#second-client-text {
+    /* font: nunito sans */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.border-two {
+    width: 320px;
+    height: 550px;
+    top: 3150.63px;
+    left: 1417px;
+    border-radius: 12px;
+    /* padding: 10px; */
+    background-color: #443f3f;
+    margin-left: 50px;
+    /* padding-bottom: 10px; */
+}
+
+#great-design-title-two {
+    /* Typography: Nunito Sans */
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38.19px;
+    letter-spacing: -0.75px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#img-logo {
+    width: 40px;
+    height: 40px;
+    top: 3730.63px;
+    left: 806px;
+}
+
+#last-section p {
+    /* font: Nunito Sans */
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24.55px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#address-description {
+    font-weight: 400;
+}
+
+#footer-icon {
+    width: 36px;
+    height: 36px;
+    top: 3964.63px;
+    left: 806px;
+}
+
+#last-section h2 {
+    /* font: Rubik */
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56.88px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#last-section {
+    width: 1442px;
+    height: 482px;
+    top: 3650.63px;
+    left: 684px;
+    margin-top: 20px;
+    background-color: rgba(30, 30, 32, 0.5);
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#input-name {
+    width: 595px;
+    height: 23.5px;
+    top: 3810.63px;
+    left: 1277px;
+}
+
+#input-email-contact {
+    width: 283px;
+    height: 23.5px;
+    top: 3862.63px;
+    left: 1277px;
+    
+}
+
+.last-line {
+    display: flex;
+}
+
+.last-half-width {
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#message {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 403.5px;
+    height: 73.5px;
+    top: 3914.63px;
+    left: 1277px;
+}
+
+#last-section button {
+    width: 162px;
+    height: 44px;
+    top: 3945.63px;
+    left: 1710px;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 35px;
+}
+
+#follow-us-text  {
+    margin-top: 15px;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar li {
+        margin: 10px 0;
+    }
+    .line {
+        flex-direction: column;
+    }
+    .half-width, .half-width-new {
+        width: 100%;
+    }
+    #awesome-portfolio .half-width {
+        width: 100%;
+    }
+    #service-we-provide .half-width {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    #service-we-provide .line {
+        justify-content: space-between;
+    }
+    #client .half-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar button {
+        align-self: center;
+        margin-top: 10px;
+    }
+    #service-we-provide .half-width {
+        width: 100%;
+    }
+    #awesome-portfolio .half-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #about h1 {
+        font-size: 36px;
+    }
+    #about p {
+        font-size: 16px;
+    }
+    #service-we-provide h2 {
+        font-size: 28px;
+    }
+    #awesome-portfolio h2 {
+        font-size: 28px;
+    }
+    #client h2 {
+        font-size: 28px;
+    }
+    #contact-us h2 {
+        font-size: 28px;
+    }
+}
